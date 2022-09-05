@@ -83,7 +83,8 @@ public class Unzip {
 
 			stdin.println("cd " + destDirectory+ "\\" + fname);
 			stdin.println("mvn install");
-			stdin.println("java -jar target\\" + "sample" + "-0.0.1-SNAPSHOT.jar");
+//			stdin.println("java -jar target\\" + "sample" + "-0.0.1-SNAPSHOT.jar");
+			stdin.println("java -jar target\\" + fname + "-0.0.1-SNAPSHOT.jar");
 			
 			stdin.close();
 			p.waitFor();
